@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="icon" type="image/x-icon" href="imgs/pic.png">
+    <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <img src="imgs/note.png" alt="">
+            <h1>ToDo List</h1>
+        </div>
+
+        <div class="note">
+            <input type="text" id="note" placeholder="Type your task ...">
+            <button class="add" id="create"><i class="fa-solid fa-plus"></i></button>
+            <button class="cancel" id="cancel" style="display:none;"><i class="fa-sharp fa-solid fa-xmark"
+                    style="color: #ffffff;"></i></button>
+        </div>
+        <p class="errorMessage" id="errorMessage" style="display:none;"></p>
+        <div class="list" id="list">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+
+                </tr>
+                <tbody id="show">
+                    <!-- <tr>
+                        <td><input type="checkbox" id="comlete"> </td>
+                        <td>training</td>
+                        <td><a href="#" id="update"></a><i class="fa-solid fa-pen" style="color: #460359;"></i></td>
+                        <td><a href="#" id="delete"><i class="fa-solid fa-trash" style="color: #460359;"></i></a></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+        <div id="emp"></div>
+
+        <div class="bar" id="deleteall">
+        </div>
+        <!-- <p>Eng.Ikram Ahmad Al-Hamadneh</p> -->
+    </div>
+    <script src="https://kit.fontawesome.com/1a01efa4b2.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
